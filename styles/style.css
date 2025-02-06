@@ -47,14 +47,6 @@ body {
     gap: 82px;
 }
 
-.apresentacao__curriculo {
-    padding: 3% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
-}
-
 .apresentacao__conteudo {
     width: 50%;
     display: flex;
@@ -151,7 +143,7 @@ body {
     font-weight: 400;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px){
 
     .cabecalho {
         padding: 10%;
@@ -167,5 +159,19 @@ body {
     }
     .apresentacao__conteudo {
         width: auto;
+    }
+
+    .apresentacao__conteudo__curriculo {
+        width: auto;
+    }
+
+    .apresentacao__img {
+        width: 50%;
+        padding-bottom: 0%;
+    }
+
+    .apresentacao__img__curriculo {
+        align-self: center;
+        width: 50%;
     }
 }
