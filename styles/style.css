@@ -4,7 +4,7 @@
     --cor-primaria: #313131;
     --cor-secundaria: #F5EDED;
     --cor-tercearia: #CA3E47;
-    --cor-hoover: #525252;
+    --cor-hover: #525252;
 
     --fonte-primaria: 'Tilt Neon', sans-serif;
     --fonte-secundaria: 'Outfit', sans-serif;
@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-} 
+}
 
 body {
     box-sizing: border-box;
@@ -46,8 +46,23 @@ body {
     gap: 82px;
 }
 
+.apresentacao__curriculo {
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
 .apresentacao__conteudo {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__curriculo {
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -60,6 +75,11 @@ body {
 
 .titulodestaque {
     color: var(--cor-tercearia);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__texto {
@@ -88,7 +108,7 @@ body {
     gap: 16px;
     width: 60%;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 16px;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
@@ -103,8 +123,7 @@ body {
 }
 
 .apresentacao__links__navegacao:hover {
-    border: 8px solid var(--cor-tercearia);
-    background-color: var(--cor-hoover);
+    background-color: var(--cor-hover);
     color: var(--cor-tercearia);
     font-weight: 700;
 }
@@ -115,14 +134,21 @@ body {
     padding-bottom: 12%;
 }
 
+.apresentacao__img__curriculo {
+    width: 25%;
+    border-radius: 100%;
+    align-self:flex-start;
+}
+
 .rodape {
-    padding: 24px;
+    padding: 1%;
     color: var(--cor-primaria);
     background-color: var(--cor-tercearia);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+    position:relative;
 }
 
 @media (max-width: 1200px) {
@@ -130,7 +156,7 @@ body {
     .cabecalho {
         padding: 10%;
     }
-    
+
     .cabecalho__menu {
         justify-content: center;
     }
