@@ -40,6 +40,7 @@ body {
 
 .apresentacao {
     padding: 3% 15%;
+    padding-bottom: 6.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,14 +142,13 @@ body {
 }
 
 .rodape {
-    padding: 1%;
+    padding: 1.01%;
     color: var(--cor-primaria);
     background-color: var(--cor-tercearia);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
-    position:relative;
 }
 
 @media (max-width: 1200px) {
